@@ -1,0 +1,46 @@
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding-top: 90px;
+}
+
+.footer__container ul{
+    
+    list-style: none;
+}
+
+.footer__title{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__container ul{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.footer__container li{
+    cursor: pointer;
+}
+
+.footer__container li:hover{
+    color: rgb(158, 156, 156);
+}
+
+.footer__heading h1{
+    letter-spacing: 15px;
+    font-family: 'Merriweather';
+    font-weight: 500;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+   margin-top: 10px;
+}

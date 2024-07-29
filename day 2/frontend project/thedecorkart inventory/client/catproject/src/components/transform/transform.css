@@ -1,0 +1,8 @@
+.transform{
+    min-height: 500px;
+}
+
+.transform img{
+    width: 100%;
+    height: 100%;
+}

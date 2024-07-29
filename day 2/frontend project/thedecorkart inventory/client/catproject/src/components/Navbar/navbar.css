@@ -1,0 +1,110 @@
+.nav__container{
+    background-color:rgb(116, 107, 97);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    position:fixed;
+    z-index: 100;
+    width: 100vw;
+}
+
+.nav__container h3{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Merriweather';
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.nav__links{
+    font-weight: 100;
+    font-family: Arial;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items:center;
+}
+
+.nav__links a{
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+}
+
+.nav__links a::before {
+    content: ' ';
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav__links a:hover::before {
+    width: 100%;
+}
+
+
+
+.nav__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+.discount{
+    color: white;
+    background-color: brown;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate-animation 5s infinite linear;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.bag{
+    position: relative;
+    z-index: 0;
+}
+.bag p{
+    position: absolute;
+    top: -16px;
+   left: -5;
+    z-index: 20;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 0.4em;
+    font-weight: 100;
+    font-family: Arial;
+    
+}
